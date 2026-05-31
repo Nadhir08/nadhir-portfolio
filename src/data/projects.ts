@@ -2,10 +2,10 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
-    id: 'haqqi',
-    name: 'Haqqi',
-    nameEn: 'Haqqi',
-    nameFr: 'Haqqi',
+    id: 'haqi',
+    name: 'Haqi',
+    nameEn: 'Haqi',
+    nameFr: 'Haqi',
     category: 'Fraud Detection Platform',
     categoryFr: 'Plateforme de Détection de Fraude',
     status: 'active',
@@ -31,7 +31,7 @@ export const projects: Project[] = [
       'Conteneurisé avec Docker pour des déploiements reproductibles et production-ready',
     ],
     stack: ['Django', 'Celery', 'Redis', 'PostgreSQL', 'pgvector', 'Docker'],
-    image: '/images/projects/haqqi.png',
+    image: '/images/projects/haqi.png',
   },
   {
     id: 'domus',

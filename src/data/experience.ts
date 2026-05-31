@@ -2,8 +2,8 @@ import type { ExperienceEntry } from '@/types'
 
 export const experiences: ExperienceEntry[] = [
   {
-    id: 'haqqi-exp',
-    company: 'Haqqi',
+    id: 'haqi-exp',
+    company: 'Haqi',
     role: 'Lead Backend Engineer & Solutions Architect',
     roleFr: 'Ingénieur Backend Principal & Architecte Solutions',
     type: 'freelance',

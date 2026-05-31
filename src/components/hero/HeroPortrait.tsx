@@ -16,6 +16,7 @@ export function HeroPortrait() {
       initial={{ opacity: 0, x: 40 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+      className="hero-portrait-wrapper"
       style={{
         position: 'relative',
         display: 'flex',
@@ -28,6 +29,7 @@ export function HeroPortrait() {
     >
       {/* Ambient glow background */}
       <div
+        className="hero-glow"
         style={{
           position: 'absolute',
           inset: -40,
@@ -39,7 +41,7 @@ export function HeroPortrait() {
 
       {/* Outer rotating ring */}
       <div
-        className="animate-spin-slow"
+        className="animate-spin-slow hero-ring-outer"
         style={{
           position: 'absolute',
           inset: -12,
@@ -53,7 +55,7 @@ export function HeroPortrait() {
 
       {/* Glow ring */}
       <div
-        className="animate-glow-pulse"
+        className="animate-glow-pulse hero-ring-glow"
         style={{
           position: 'absolute',
           inset: -4,
@@ -65,6 +67,7 @@ export function HeroPortrait() {
 
       {/* Portrait image */}
       <div
+        className="hero-portrait-img"
         style={{
           width: 280,
           height: 280,

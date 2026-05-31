@@ -45,7 +45,7 @@ export function Hero() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
             gap: '4rem',
             alignItems: 'center',
             width: '100%',

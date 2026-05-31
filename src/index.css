@@ -233,31 +233,13 @@ code, kbd, pre, .font-mono {
 }
 
 /* ================================
-   HERO PORTRAIT — MOBILE COMPACT
+   MOBILE ADJUSTMENTS
 ================================ */
 @media (max-width: 767px) {
-  .hero-portrait-wrapper {
-    max-width: 280px !important;
-    margin-top: -1rem;
-    margin-bottom: -1rem;
-    overflow: hidden;
-  }
-
-  .hero-portrait-img {
-    width: 180px !important;
-    height: 180px !important;
-  }
-
-  .hero-glow {
-    inset: -20px !important;
-  }
-
-  .hero-ring-outer {
-    inset: -8px !important;
-  }
-
-  .hero-ring-glow {
-    inset: -2px !important;
+  /* Smaller CTA buttons on mobile */
+  #hero button,
+  #hero .hero-cta-wrap button {
+    padding: 0.55rem 1.2rem !important;
+    font-size: 0.82rem !important;
   }
 }
-

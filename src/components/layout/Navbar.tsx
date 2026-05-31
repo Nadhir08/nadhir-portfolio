@@ -22,11 +22,23 @@ export function Navbar() {
   }, [])
 
   useEffect(() => {
+    const sectionToNavLinkMap: Record<string, string> = {
+      hero: 'about',
+      about: 'about',
+      projects: 'projects',
+      experience: 'experience',
+      contact: 'contact'
+    }
+
     const observers = sections.map(id => {
       const el = document.getElementById(id)
       if (!el) return null
       const obs = new IntersectionObserver(
-        ([entry]) => { if (entry.isIntersecting) setActiveSection(id) },
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(sectionToNavLinkMap[id] || id)
+          }
+        },
         { rootMargin: '-40% 0px -55% 0px' }
       )
       obs.observe(el)
@@ -46,7 +58,12 @@ export function Navbar() {
   }, [])
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    const targetId = id === 'about' ? 'hero' : id
+    if (targetId === 'hero') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
+    }
     setMobileOpen(false)
   }
 

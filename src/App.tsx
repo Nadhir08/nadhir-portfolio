@@ -24,9 +24,9 @@ function AppContent() {
       <main>
         <Hero />
         <Architecture />
+        <Philosophy />
         <Projects />
         <Experience />
-        <Philosophy />
         <Contact />
       </main>
       <Footer />

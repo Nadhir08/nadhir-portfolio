@@ -46,6 +46,26 @@ export const experiences: ExperienceEntry[] = [
     stack: ['Next.js', 'Supabase', 'PostgreSQL', 'Stripe', 'Framer Motion', 'Tailwind CSS'],
   },
   {
+    id: 'esprit-edu',
+    company: "ESPRIT — École Supérieure Privée d'Ingénierie",
+    role: 'National Engineering Diploma — Software Engineering',
+    roleFr: "Diplôme National d'Ingénieur — Génie Logiciel",
+    type: 'education',
+    period: '2021 – 2025',
+    current: false,
+    impact: [
+      'Specialized in Software Engineering & Architecture',
+      'Built multiple production-grade systems as academic and freelance projects',
+      'Graduated as certified engineer (Diplôme National d\'Ingénieur)',
+    ],
+    impactFr: [
+      'Spécialisé en Génie Logiciel & Architecture',
+      'Développement de plusieurs systèmes en production comme projets académiques et freelance',
+      'Diplômé ingénieur (Diplôme National d\'Ingénieur)',
+    ],
+    stack: [],
+  },
+  {
     id: 'intech-exp',
     company: 'InTech Solutions',
     role: 'Software Engineer — Modular ERP System',
@@ -126,26 +146,6 @@ export const experiences: ExperienceEntry[] = [
       'APIs RESTful pour la communication inter-modules',
     ],
     stack: ['Spring Boot', 'Angular', 'MySQL'],
-  },
-  {
-    id: 'esprit-edu',
-    company: 'ESPRIT — École Supérieure Privée d\'Ingénierie',
-    role: 'National Engineering Diploma — Software Engineering',
-    roleFr: 'Diplôme National d\'Ingénieur — Génie Logiciel',
-    type: 'education',
-    period: '2021 – 2025',
-    current: false,
-    impact: [
-      'Specialized in Software Engineering & Architecture',
-      'Built multiple production-grade systems as academic and freelance projects',
-      'Graduated as certified engineer (Diplôme National d\'Ingénieur)',
-    ],
-    impactFr: [
-      'Spécialisé en Génie Logiciel & Architecture',
-      'Développement de plusieurs systèmes en production comme projets académiques et freelance',
-      'Diplômé ingénieur (Diplôme National d\'Ingénieur)',
-    ],
-    stack: [],
   },
   {
     id: 'iset-edu',

@@ -242,4 +242,27 @@ code, kbd, pre, .font-mono {
     padding: 0.55rem 1.2rem !important;
     font-size: 0.82rem !important;
   }
+
+  /* Medium hero portrait on mobile */
+  .hero-portrait-wrapper {
+    max-width: 340px !important;
+  }
+
+  .hero-portrait-img {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  .hero-glow {
+    inset: -28px !important;
+  }
+
+  .hero-ring-outer {
+    inset: -10px !important;
+  }
+
+  .hero-ring-glow {
+    inset: -3px !important;
+  }
 }
+

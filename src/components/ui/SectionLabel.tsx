@@ -1,5 +1,5 @@
 interface SectionLabelProps {
-  number: string
+  number?: string
   title: string
   subtitle?: string
   align?: 'left' | 'center'
@@ -25,16 +25,18 @@ export function SectionLabel({ number, title, subtitle, align = 'center' }: Sect
           color: 'var(--accent-cyan)',
         }}
       >
-        <span style={{ opacity: 0.5 }}>{number}</span>
-        <span
-          style={{
-            width: 24,
-            height: 1,
-            background: 'var(--accent-cyan)',
-            opacity: 0.6,
-            display: 'inline-block',
-          }}
-        />
+        {number && <span style={{ opacity: 0.5 }}>{number}</span>}
+        {number && (
+          <span
+            style={{
+              width: 24,
+              height: 1,
+              background: 'var(--accent-cyan)',
+              opacity: 0.6,
+              display: 'inline-block',
+            }}
+          />
+        )}
         <span>{title}</span>
       </div>
 

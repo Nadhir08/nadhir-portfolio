@@ -10,7 +10,7 @@ export function Philosophy() {
   return (
     <section id="philosophy" className="section-padding">
       <div className="container-custom">
-        <SectionLabel number="04" title={t.philosophy.title} subtitle={t.philosophy.subtitle} />
+        <SectionLabel title={t.philosophy.title} subtitle={t.philosophy.subtitle} />
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
           {principles.map((principle, index) => {

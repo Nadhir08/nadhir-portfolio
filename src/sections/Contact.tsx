@@ -75,7 +75,7 @@ export function Contact() {
       />
 
       <div className="container-custom" style={{ maxWidth: 1000 }}>
-        <SectionLabel number="05" title={t.contact.title} subtitle={t.contact.subtitle} />
+        <SectionLabel number="04" title={t.contact.title} subtitle={t.contact.subtitle} />
 
         <div
           style={{
